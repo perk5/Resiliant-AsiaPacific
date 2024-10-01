@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+section{
+    padding: 7rem 2rem;
+}
+
+.home {
+    background: url(/static/images/milk.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header.active{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: 0;
+}
+
+.home .content{
+    width: 55rem;
+    padding: 2rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.home .content p{
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 0.3rem 0;
+}
+
+.read-more{
+    padding: 10px 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    background-color: rgb(2,143,145);
+    color: var(--white);
+}

@@ -1,0 +1,149 @@
+.image-container {
+    width: 100%;
+    height: 300px;
+    background: url('/static/images/cyan-background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+}
+
+.image-container .text {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(3, 118, 120); /* Make sure the text is visible */
+   /* Add a subtle shadow for contrast */
+}
+
+.company-information{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.company-info-image{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.company-info-image img{
+    width: 100%;
+    max-width: 480px;
+    border-radius: 15px;
+}
+
+.company-inside-information{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+    width: 75%;
+}
+
+.inside-information-title{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.inside-information-heading{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.inside-information-sub-heading{
+    font-size: 12px;
+}
+
+.company-goal{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 260px;
+}
+
+.company-strategies{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    color: var(--black);
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.company-strategies-inside{
+    line-height: 20px;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.word-from-founder{
+    background-color: var(--blue);
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.words{
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.founder-img-name{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.founder-image{
+    width: 70px;
+}
+
+.founder-image img{
+    height: 60px;
+    border-radius: 30px;
+}
+
+.founder-name{
+    flex: 1;
+    padding-left: 10px;
+}
+
+.founder-name .name{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.founder-name .position{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.company-info-image2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.company-info-image2 img{
+    width: 100%;
+    max-width: 540px;
+    border-radius: 15px;
+}
+
+
+

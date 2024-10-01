@@ -1,0 +1,52 @@
+.contact h1{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: none;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+.contact form .box{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    text-transform : none;
+}
+
+.contact form span{
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.contact form .submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form .submit-button .read-more{
+    font-size: 1.4rem;
+}
+
+.contact form .read-more{
+    padding: 10px 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    background-color: rgb(2,143,145);
+    color: var(--white);
+    width: 200px;
+}

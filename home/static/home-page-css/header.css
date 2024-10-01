@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --blue: #00b8b8;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --border: .2rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+
+}
+
+*::-webkit-scrollbar{
+    height:.5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behaviour: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+.link-btn{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+.header{
+    padding: 2rem;
+    border-bottom: var(--border);
+}
+
+.header .logo{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.header .logo span{
+    color: var(--blue);
+}
+
+.header .nav a{
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.header .nav a:hover{
+    color: rgb(19,175,165);
+}
+
+.search-bar{
+    border: 1px solid var(--blue);
+    border-radius: 2px;
+    padding-left: 10px;
+    padding-top: 1.5px;
+    height: 30px;
+    width: 220px;
+    font-size: 15px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    background-color: rgb(237,254,255);
+}
+
+.search-bar::placeholder{
+    padding-left: 3 px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.search-button{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 2.3px;
+    padding-top: 2.2px;
+    margin-left: -3px;
+    background-color: var(--blue);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.search-icon{
+    height: 2.1rem;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
