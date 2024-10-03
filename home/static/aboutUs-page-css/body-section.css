@@ -66,10 +66,6 @@
 }
 
 .company-goal{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
     padding-left: 260px;
 }
 
@@ -94,6 +90,7 @@
     background-color: var(--blue);
     padding: 12px;
     border-radius: 6px;
+    margin-top: 50px;
 }
 
 .words{

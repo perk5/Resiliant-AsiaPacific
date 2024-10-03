@@ -12,6 +12,7 @@
 
   <!-- bootstrap cdn link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
   <!-- custom home-page-css file link -->
   <link rel="stylesheet" href="{% static 'home-page-css/header.css' %}">
@@ -28,13 +29,51 @@
 <header class="header fixed-top">
   <div class="container">
     <div class="row align-items-center justify-content-between">
-      <a href="#home" class="logo">Resilient <span>AsiaPacific.</span></a>
+      <a href="{% url 'home' %}" class="logo">Resilient <span>AsiaPacific.</span></a>
       <nav class="nav">
         <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'aboutUs' %}">About Us</a>
-        <a href="#services">Our Services</a>
-        <a href="#partner">Partners</a>
-        <a href="#contact">Contact Us</a>
+        <div class="dropdown">
+          <a href="#">Our Services <i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+          <ul class="dropdown__menu">
+            <li>
+              <a href="#" class="dropdown__link">
+                IT
+              </a>
+            </li>
+             <li>
+              <a href="#" class="dropdown__link">
+                Consultancy
+              </a>
+            </li>
+             <li>
+              <a href="#" class="dropdown__link">
+                Simple
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="#">Partners<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+          <ul class="dropdown__menu">
+            <li>
+              <a href="#" class="dropdown__link">
+                IBM
+              </a>
+            </li>
+             <li>
+              <a href="#" class="dropdown__link">
+                LANSA
+              </a>
+            </li>
+             <li>
+              <a href="#" class="dropdown__link">
+                Telstra
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="">Contact Us</a>
       </nav>
       <div class="search-part">
         <input class="search-bar" type="text" placeholder="Search">
@@ -82,7 +121,10 @@
         <h3>True Technical Services For Your Enterprise</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button class="read-more">Read More >></button>
+        <a href="{% url 'aboutUs' %}">
+          <button class="read-more">Read More >></button>
+        </a>
+
       </div>
     </div>
   </div>

@@ -68,6 +68,39 @@ html{
     color: var(--black);
 }
 
+.dropdown__link{
+    padding: 0.4rem 0.4rem 0.75rem 0.4rem ;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.dropdown__menu{
+    position: absolute;
+    top: 50px;
+    left: 4px;
+    background-color: rgb(211, 242, 245);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.dropdown:hover .dropdown__menu{
+    max-height: 300px;
+    transition : max-height .3s ease-in;
+}
+
+.dropdown__arrow{
+   transition: transform 0.5s ease-in;
+}
+
+
+.dropdown:hover .dropdown__arrow{
+    transform: rotate(180deg);
+}
+
+
 .header .nav a:hover{
     color: rgb(19,175,165);
 }
@@ -109,6 +142,7 @@ html{
     color: var(--black);
     cursor: pointer;
     display: none;
+    transition: opacity .1s, transform .4s;
 }
 
 

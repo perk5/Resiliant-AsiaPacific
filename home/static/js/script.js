@@ -9,8 +9,14 @@ menu.onclick = () => {
 }
 
 window.onscroll = () => {
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
+    if (navbar.classList.contains('active')) {
+            // Keep the menu open while scrolling
+
+
+            // Uncomment the next two lines to close it on scroll
+            // menu.classList.remove('fa-times');
+            // navbar.classList.remove('active');
+        }
 
     if(window.scrollY > 0){
         header.classList.add('active');

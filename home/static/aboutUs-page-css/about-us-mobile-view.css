@@ -50,7 +50,25 @@
         margin: 1rem 0;
         font-size: 2rem;
     }
+    .dropdown__menu{
+        position: static;
+        border-radius: none;
+        background-color: rgb(100, 253, 255);
 
+    }
+
+    .dropdown__link{
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .dropdown{
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+    .dropdown a{
+        padding-left: 20px;
+    }
     .home{
         background-position: left;
     }
