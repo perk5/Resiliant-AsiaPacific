@@ -11,3 +11,7 @@ def index(request):
 def aboutUs(request):
     return render(request, 'about-us.html')
 
+
+def service1(request):
+    return render(request, 'services-1.html')
+

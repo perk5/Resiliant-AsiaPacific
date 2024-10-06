@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+.image-container{
+    width: 100%;
+    height: 400px;
+    background: url('/static/images/cyan-background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.image-container .text {
+    position: absolute;
+    font-weight: 500;
+    font-size: 50px;
+    top: 160px;
+    left: 250px;
+}
+
+/* Image Styling */
+.image-container .image {
+    position: absolute;
+    margin-right: 150px;
+    display: flex;
+    justify-content: start;
+    height: 300px;
+    width: 30%;
+    transition: height 0.3s ease;
+    right: 50px;
+    bottom: -70px;
+}
+
+/* Hover Effect */
+.image-container .image:hover {
+    height: 330px;
+    cursor: pointer;
+    transition: height 1.5s ease;
+}
+
+.img{
+    border-radius: 50px;
+}
+
+
+.service1-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.service1-description .paragraph1{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 200px;
+
+}

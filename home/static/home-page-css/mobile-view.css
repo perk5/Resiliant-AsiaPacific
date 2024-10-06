@@ -1,7 +1,7 @@
 
 /* media Queries */
 
-@media (max-width: 991px){
+@media (max-width: 1024px){
     html{
         font-size: 55%;
     }
@@ -11,6 +11,12 @@
     section{
         padding: 5rem 2rem;
     }
+
+    .header .search-part{
+        display: none;
+    }
+
+
 }
 
 @media (max-width: 768px){
@@ -27,12 +33,14 @@
         transform: rotate(180deg);
     }
 
+
+
     .header .nav{
         position: absolute;
         top: 99%;
         left: 0px;
         right: 0px;
-        background-color: rgb(209,253,255);
+        background-color: rgba(244, 248, 249 , 1);
         border-top: var(--border);
         border-bottom: var(--border);
         padding: 1rem 0;
@@ -52,8 +60,7 @@
     .dropdown__menu{
         position: static;
         border-radius: none;
-        background-color: rgb(100, 253, 255);
-
+        background-color: rgb(221, 251, 251);
     }
 
     .dropdown__link{
