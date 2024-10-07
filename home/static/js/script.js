@@ -24,3 +24,10 @@ window.onscroll = () => {
         header.classList.remove('active');
     }
 }
+
+document.addEventListener('click', function(event) {
+    if (!navbar.contains(event.target) && !menu.contains(event.target)) {
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+    }
+});

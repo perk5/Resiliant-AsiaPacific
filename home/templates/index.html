@@ -57,7 +57,7 @@
           <a href="#">Partners<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
           <ul class="dropdown__menu">
             <li>
-              <a href="#" class="dropdown__link">
+              <a href="{% url 'partner1' %}" class="dropdown__link">
                 IBM
               </a>
             </li>
@@ -137,11 +137,14 @@
 <section class="services" id="services">
   <h1 class="heading">Our Services</h1>
   <div class="box-container content">
-    <div class="box">
+    <a href="">
+      <div class="box">
       <img src="{% static 'icons/consultancyservices.svg' %}" alt="">
-      <h3>Specialist</h3>
+      <h3>Consulting</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     </div>
+    </a>
+
     <div class="box">
       <img src="{% static 'icons/consultancyservices.svg' %}" alt="">
       <h3>Specialist</h3>
@@ -177,7 +180,7 @@
     Our Partners
   </h1>
   <div class="box-container container">
-    <a href="">
+    <a href="{% url 'service1' %}">
       <div class="box">
         <img src="{% static 'icons/IBM.svg' %}" alt="">
         <h3>IBM</h3>
@@ -239,7 +242,7 @@
 </section>
 <!-- contact section Ends -->
 <!-- Footer section Starts -->
-<section class="footer">
+<section class="footer" >
   <div class="box-container container">
     <div class="box">
       <i class="fas fa-phone"></i>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+.section{
+    position: relative;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move up to original position */
+    }
+}
+
+.overlap-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: start;
+}
+
+.cyan-box{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    background-color: var(--blue);
+    top: -140px;
+    left: auto;
+    border-radius: 20px;
+    animation: moveCyanBox 1.2s ease-out forwards;
+}
+
+@keyframes moveCyanBox {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); /* Slide from left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End in original position */
+    }
+}
+
+.cover-image{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    top: -100px;
+    left: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    animation: fadeInRight 1.5s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); /* Slide from right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(40px); /* End in original position */
+    }
+}
+
+.description{
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    align-items: start;
+    flex-direction: column;
+}
+
+.partner-name{
+    font-weight: 600;
+    font-size: 50px;
+    color: var(--black);
+}
+
+.partner-information{
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 400;
+}
+

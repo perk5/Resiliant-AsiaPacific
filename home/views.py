@@ -15,3 +15,7 @@ def aboutUs(request):
 def service1(request):
     return render(request, 'services-1.html')
 
+
+def partner1(request):
+    return render(request, 'partner-1.html')
+

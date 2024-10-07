@@ -1,7 +1,7 @@
 
 /* media Queries */
 
-@media (max-width: 1024px){
+@media (max-width: 1200px){
     html{
         font-size: 55%;
     }
@@ -15,11 +15,10 @@
     .header .search-part{
         display: none;
     }
-
-
 }
 
 @media (max-width: 768px){
+
     section{
         padding: 3rem 1rem;
     }
@@ -32,8 +31,6 @@
     #menu-btn.fa-times{
         transform: rotate(180deg);
     }
-
-
 
     .header .nav{
         position: absolute;
@@ -72,6 +69,7 @@
         padding-top: 5px;
         padding-bottom: 0px;
     }
+
     .dropdown a{
         padding-left: 20px;
     }
@@ -83,6 +81,7 @@
     .home .content{
         width: auto;
     }
+
 }
 
 @media (max-width: 450px){
@@ -97,6 +96,4 @@
     .heading{
         font-size: 3rem;
     }
-
-
 }
