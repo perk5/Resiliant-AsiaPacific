@@ -19,3 +19,6 @@ def service1(request):
 def partner1(request):
     return render(request, 'partner-1.html')
 
+def contactus(request):
+    return render(request, 'contact-us.html')
+

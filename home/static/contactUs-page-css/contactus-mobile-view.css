@@ -1,0 +1,322 @@
+
+/* media Queries */
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+    .header .search-part{
+        display: none;
+    }
+    section{
+        padding: 0rem 0rem;
+    }
+    .company-goal{
+        padding-left: 50px;
+    }
+
+    .image-container .image{
+        height: 220px;
+        transition: none;
+    }
+    .image-container .image:hover {
+        height: 225px;
+        cursor: none;
+    }
+
+    .service1-description .paragraph1{
+        font-weight: 400;
+        font-size: 15px;
+        margin: 0 100px;
+    }
+
+    .footer .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20.5rem, 1fr));
+    }
+
+}
+
+@media (max-width: 996px){
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .nav{
+        position: absolute;
+        top: 99%;
+        left: 0px;
+        right: 0px;
+        background-color: rgb(209,253,255);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        padding: 1rem 0;
+        text-align: center;
+        flex-flow: column;
+        clip-path: polygon(0 0, 100% 0, 0 0);
+        transition: clip-path 0.9s ease;
+    }
+
+    .header .nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .nav a{
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+    .dropdown__menu{
+        position: static;
+        border-radius: none;
+        background-color: rgb(100, 253, 255);
+    }
+
+    .dropdown__link{
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .dropdown{
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+    .dropdown a{
+        padding-left: 20px;
+    }
+    .home{
+        background-position: left;
+    }
+
+    .home .content{
+        width: auto;
+    }
+
+    section{
+        padding: 0px 4px;;
+    }
+
+    .image-container .image{
+        height: 220px;
+        transition: none;
+    }
+    .image-container .image:hover {
+        height: 225px;
+        cursor: none;
+    }
+
+    .service1-description .paragraph1{
+        font-weight: 400;
+        font-size: 15px;
+        margin: 0 100px;
+    }
+}
+
+@media (max-width: 850px){
+    .form{
+        grid-template-columns: 1fr;
+    }
+
+    .form-container{
+        height: 800px;
+    }
+
+    .contact-info:before{
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+    .contact-form:before{
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+
+    .square{
+        transform: translate(140%, 43%);
+        height: 420px;
+    }
+
+    .big-circle{
+        bottom: 75%;
+        transform: scale(0.9) translate(-40%, 30%);
+        right: 50%;
+    }
+
+    .text{
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    .social-media{
+        padding: 1.5rem 0 0 0;
+    }
+
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+
+    .home .content{
+        font-size: 4rem;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+    .company-goal{
+        padding-left: 5px;
+    }
+
+    .image-container .image {
+        position: absolute;
+        margin-right: 150px;
+        display: flex;
+        justify-content: start;
+        width: 30%;
+        right: 63px;
+        bottom: -70px;
+    }
+
+     .image-container .image{
+        position: absolute;
+        top: 80%;
+    }
+
+    .img{
+        height: 150px;
+    }
+
+    .service1-description .paragraph1{
+        font-weight: 400;
+        font-size: 15px;
+        margin: 0 50px;
+    }
+
+    .image-container .text {
+        font-weight: 500;
+        font-size: 30px;
+        position: absolute; /* Ensure the text stays centered even when the image moves */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centers text both horizontally and vertically */
+        text-align: center;
+    }
+
+    .footer .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+    }
+
+    .footer .box-container .box h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: var(--black);
+    }
+
+    .cyan-box{
+        position: absolute;
+        width: 100%;
+        height: 350px;
+        top: 100px;
+        object-fit: cover;
+    }
+
+    .cover-image{
+        position: relative;
+        width: 100%;
+        height: 350px;
+        top: 130px;
+        object-fit: cover;
+    }
+
+    .description{
+        margin-top: 200px;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .partner-name{
+        font-weight: 600;
+        font-size: 40px;
+        color: var(--black);
+    }
+
+    .partner-information{
+        line-height: 25px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .section{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .form-container {
+        height: 750px;
+    }
+
+    .container{
+        padding: 1.5rem;
+    }
+
+    .contact-info:before{
+        display: none;
+    }
+
+    .square,
+    .big-circle{
+        display: none;
+    }
+
+    form,
+    .contact-info{
+        padding: 1.7rem 1.6rem;
+
+    }
+
+    .text, .information, .social-media p{
+        font-size: 1.4rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .social-icons{
+        max-width: 110px;
+    }
+
+    .social-icons a{
+        width: 30px;
+        height: 30px;
+        line-height: 35px;
+    }
+
+    .icon{
+        width: 23px;
+    }
+
+    .input{
+        padding: 0.65rem 1.2rem;
+        font-size: 1.75rem;
+    }
+
+    .btn{
+        padding: 0.55rem 1.2rem;
+
+    }
+}
